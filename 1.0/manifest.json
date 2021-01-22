@@ -1,0 +1,26 @@
+{
+  "short_name": "LEX",
+  "name": "LEX",
+  "icons": [
+    {
+      "src": "images/LEX-FAVICON-COLORED.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "images/LEX-FAVICON-COLORED.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "images/LEX-FAVICON-COLORED.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "index.php",
+  "theme_color": "#000",
+  "background_color": "#000",
+  "display": "standalone",
+  "orientation":"landscape"
+}

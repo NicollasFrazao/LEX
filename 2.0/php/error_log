@@ -1,0 +1,7 @@
+[09-Jan-2018 16:19:37 America/Chicago] PHP Warning:  include(php/Conexao.php): failed to open stream: No such file or directory in /home/anyte539/public_html/lex/php/getTemas.php on line 2
+[09-Jan-2018 16:19:37 America/Chicago] PHP Warning:  include(php/Conexao.php): failed to open stream: No such file or directory in /home/anyte539/public_html/lex/php/getTemas.php on line 2
+[09-Jan-2018 16:19:37 America/Chicago] PHP Warning:  include(): Failed opening 'php/Conexao.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/anyte539/public_html/lex/php/getTemas.php on line 2
+[09-Jan-2018 16:19:37 America/Chicago] PHP Warning:  include(php/ConexaoPrincipal.php): failed to open stream: No such file or directory in /home/anyte539/public_html/lex/php/getTemas.php on line 3
+[09-Jan-2018 16:19:37 America/Chicago] PHP Warning:  include(php/ConexaoPrincipal.php): failed to open stream: No such file or directory in /home/anyte539/public_html/lex/php/getTemas.php on line 3
+[09-Jan-2018 16:19:37 America/Chicago] PHP Warning:  include(): Failed opening 'php/ConexaoPrincipal.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home/anyte539/public_html/lex/php/getTemas.php on line 3
+[09-Jan-2018 16:19:37 America/Chicago] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/anyte539/public_html/lex/php/getTemas.php on line 5

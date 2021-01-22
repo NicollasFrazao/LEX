@@ -1,0 +1,343 @@
+<html>
+	<head>
+		<title>LEX - Cadastrar Tradução</title>
+		
+		<link href='https://fonts.googleapis.com/css?family=Impact' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/lex-style.css">
+		<link rel="stylesheet" href="css/mdl/material.min.css">
+		<script src="css/mdl/material.min.js"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<style>
+			
+			.lex-central-box{
+				display: inline-block;
+				background-color: transparent;
+				width: 50%;
+				height: 80%;
+				margin-top: 10%;
+				margin-left: 25%;
+				text-align: center;
+			}
+
+			.lex-logo{
+				display: inline-block;
+				height: 35%;
+				margin-bottom: 5%;
+
+			}
+			
+			.begin{}
+			
+			.lex-main{
+			
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+				
+			}
+			
+			.lex-top-modes{
+				
+				display: inline-block;
+				width: 100%;
+				height: 75%;			
+				
+			}
+			
+			.lex-bottom-modes{
+				
+				display: inline-block;
+				width: 96%;
+				height: 25%;
+				margin-left: 2%;		
+				margin-right: 2%;		
+				
+			}
+			
+			
+			.table-modes{
+				width:96%;
+				height: 100%;
+				margin-left: 2%;
+			}
+			
+			.left-mode{
+				display: inline-block;
+				width: 94%;
+				height: 90%;
+				padding: 2%;
+				margin-right: 2%;
+				text-align: center;
+				transition: background 0.3s;
+				background-color: rgba(255,255,255,0.07);
+			}
+			
+			.left-mode > .lex-cyan-label,
+			.right-mode > .lex-cyan-label,
+			.center-mode > .lex-cyan-label{
+				font-size: 1em;				
+			}
+			
+			.left-mode > .lex-white-label,
+			.right-mode > .lex-white-label,
+			.center-mode > .lex-white-label{
+				width: 80%;
+				font-weight: normal;	
+				font-size: 0.6em;				
+			}
+			
+			.center-mode{
+				display: inline-block;
+				width: 94%;
+				height: 90%;
+				padding: 2%;
+				text-align: center;
+				transition: background 0.3s;
+				background-color: rgba(255,255,255,0.07);
+			}
+			
+			.right-mode{
+				display: inline-block;
+				width: 94%;
+				height: 90%;
+				padding: 2%;
+				margin-left: 2%;
+				text-align: center;
+				transition: background 0.3s;
+				background-color: rgba(255,255,255,0.07);
+			}
+			
+			.mode-ico{
+				height: 50px;
+				margin-top: 30px;
+				margin-bottom: 10px;
+			}
+			
+			.title-float{
+				
+				position: absolute;
+				top: 0px;
+				width: auto;
+				right: 2%;
+				
+			}
+			
+			.select-space{
+				
+				margin-left: 2%;
+				padding: 10px;
+				width: 94%;
+				margin-top: 10px;
+				
+			}
+			
+			.mdl-layout__drawer-button{
+				visibility: hidden;
+			}
+			
+			.lex-menu-button{
+				position: absolute;
+				top: 10px;
+				left: 2%;
+				width: 35px;
+			}
+			
+			.lex-logo-menu-inside{
+				width: 35px;
+				margin-left: 14px;
+			}
+			
+			#select_countdown{
+				display: none;	
+				font-size: 0.7em;
+			}
+			
+			#select_thematic{
+				display: none;	
+				font-size: 0.7em;
+			}
+			
+			.lex-menu-title{
+				margin-left: 10px;
+				color: #fff;
+			}
+			
+			.lex-sep{
+				margin-left: 16px;
+				margin-right: 16px;
+				margin-top:6px;
+				margin-bottom: 0px;
+				border-top: 1px solid #444;
+			}
+			
+			.lex-main-box{
+				
+				display: inline-block;
+				height: 90%;
+				width: 96%;
+				padding: 2%;
+				
+			}
+			
+			.lex-points{
+				
+				font-size: 2em;
+				
+			}
+			
+			.legend{
+				padding: 30px;
+				font-size: 0.8em;	
+				padding-top: 2px;
+				padding-bottom: 6px;
+			}
+			
+			.lex-lifes{
+				position: absolute;
+				top: 0px;
+				width: auto;
+				right: 2%;	
+			}
+			
+			.lex-points-box{
+				padding:5px;
+				padding-left:20px;
+				padding-right:20px;
+				text-align: center;
+				background-color: #00f0b0;
+				
+			}
+			
+			.lex-points-title{
+				font-size: 0.7em;
+			}
+			
+			.lex-points-score{
+				font-size: 1.6em;
+			}
+			
+			.lex-heart{
+				width: 20px;
+				height: 20px;
+				margin-left: 5px;
+			}
+			
+			.lex-heart-box{
+				padding-right: 10px;
+			}
+			
+			.lex-select{
+				margin-bottom: 10px;
+			}
+		</style>
+	</head>
+	<body onselectstart='return false;'>
+		
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header"  id='mailer'>
+		<header class="mdl-layout__header">
+			
+			<label class='lex-cyan-box-label title-float'>Cadastrar Palavras</label>			
+			<img id='lex_menu_button' class='lex-menu-button' src='images/lex-logo-colored.png'>
+			<div class="mdl-layout__header-row">
+				<!-- Title -->
+				<span class="mdl-layout-title"></span>
+				<!-- Add spacer, to align navigation to the right -->
+				<div class="mdl-layout-spacer"></div>
+				<!-- Navigation. We hide it in small screens. -->
+				<nav class="mdl-navigation mdl-layout--large-screen-only">
+					<!--<a class="mdl-navigation__link" href="">Link</a>
+					<a class="mdl-navigation__link" href="">Link</a>
+					<a class="mdl-navigation__link" href="">Link</a>
+					<a class="mdl-navigation__link" href="">Link</a>-->
+				</nav>
+			</div>
+		</header>
+		<div class="mdl-layout__drawer">
+			
+			<nav class="mdl-navigation">
+				<table cellspadding='0' cellspacing='0'>
+					<tr>
+						<td><img src='images/lex-logo-colored.png' class='lex-logo-menu-inside'></td>
+						<td><span class='lex-menu-title'>LEX</span></td>
+					</tr>
+				</table>
+				
+				<hr class='lex-sep'></hr>
+				
+				<a class="mdl-navigation__link" href="cadastrarPalavra.html">Cadastrar Palavra</a>
+				<a class="mdl-navigation__link" href="cadastrarTraducao.html">Cadastrar Tradução</a>
+				<a class="mdl-navigation__link" href="cadastrarTema.html">Cadastrar Tema</a>
+				<a class="mdl-navigation__link" href="cadastrarIdioma.html">Cadastrar Idioma</a>  
+			</nav>
+		</div>
+		<main class="mdl-layout__content lex-main">
+					
+			<div class='lex-main-box'>
+				<form id="Frm_Traducao" method="POST" action="php/cadastrarTraducao.php">
+					<label class='lex-cyan-label'>Tema</label>
+					<select class='lex-select' id="cmb_tema" name="codigoTema" required>
+						<option value="">Selecione...</option>		
+					</select>
+					<br><br>
+					
+					<label class='lex-cyan-label'>Palavra base</label>
+					<select class='lex-select' id="cmb_palavraBase" name="codigoPalavraBase" disabled required>
+						<option value="">Selecione...</option>		
+					</select>
+					<br><br>
+					
+					<label class='lex-cyan-label'>Idioma da Tradução</label>
+					<select class='lex-select' id="cmb_idioma" name="codigoIdioma" required>
+						<option value="">Selecione...</option>		
+					</select>
+					<br><br>
+					
+					<label class='lex-cyan-label'>Tradução</label>
+					<input type='text' class='lex-input' id="txt_traducao" name="nomeTraducao" required/>
+					<br><br>
+					
+					<button type="submit" class='lex-pink-button' id="btn_salvar">Salvar</button>
+				</form>
+			</div>
+		
+		</main>
+	</div>
+	</body>
+	<script src="js/ajax.js"></script>
+	<script>
+		window.onload = function()
+		{
+			Ajax("GET", "php/getTemas.php", "", "var retorno = this.responseText; cmb_tema.innerHTML = retorno;");
+			Ajax("GET", "php/getIdiomas.php", "", "var retorno = this.responseText; cmb_idioma.innerHTML = retorno;");
+		}
+		
+		lex_menu_button.onclick = function(){
+			
+						
+			document.getElementsByClassName("mdl-layout__drawer-button")[0].click();
+			
+		}
+		
+		cmb_tema.onchange = function()
+		{
+			if (this.value != '')
+			{
+				Ajax("GET", "php/getPalavras.php", "codigoTema=" + this.value, "var retorno = this.responseText; cmb_palavraBase.innerHTML = retorno; cmb_palavraBase.disabled = false;");
+			}
+			else
+			{
+				cmb_palavraBase.disabled = true;
+				cmb_palavraBase.innerHTML = '<option value="">Selecione...</option>';
+			}
+		}
+		
+		Frm_Traducao.onsubmit = function()
+		{
+			AjaxForm(this, "btn_salvar.disabled = true", "var retorno = this.responseText; var indicador = retorno.split(';-;')[0]; var mensagem = retorno.split(';-;')[1]; alert(mensagem); if (indicador == 1) {Frm_Traducao.reset();} btn_salvar.disabled = false;");
+			
+			return false;
+		}
+	</script>
+</html>

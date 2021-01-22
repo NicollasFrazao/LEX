@@ -1,0 +1,331 @@
+<html>
+	<head>
+		<title></title>
+		
+		
+		<link href='https://fonts.googleapis.com/css?family=Impact' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/lex-style.css">
+		<link rel="stylesheet" href="css/mdl/material.min.css">
+		<script src="css/mdl/material.min.js"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<style>
+			
+			.lex-central-box{
+				display: inline-block;
+				background-color: transparent;
+				width: 50%;
+				height: 80%;
+				margin-top: 10%;
+				margin-left: 25%;
+				text-align: center;
+			}
+
+			.lex-logo{
+				display: inline-block;
+				height: 35%;
+				margin-bottom: 5%;
+
+			}
+			
+			.begin{}
+			
+			.lex-main{
+			
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+				
+			}
+			
+			.lex-top-modes{
+				
+				display: inline-block;
+				width: 100%;
+				height: 75%;			
+				
+			}
+			
+			.lex-bottom-modes{
+				
+				display: inline-block;
+				width: 96%;
+				height: 25%;
+				margin-left: 2%;		
+				margin-right: 2%;		
+				
+			}
+			
+			
+			.table-modes{
+				width:96%;
+				height: 100%;
+				margin-left: 2%;
+			}
+			
+			.left-mode{
+				display: inline-block;
+				width: 94%;
+				height: 90%;
+				padding: 2%;
+				margin-right: 2%;
+				text-align: center;
+				transition: background 0.3s;
+				background-color: rgba(255,255,255,0.07);
+			}
+			
+			.left-mode > .lex-cyan-label,
+			.right-mode > .lex-cyan-label,
+			.center-mode > .lex-cyan-label{
+				font-size: 1em;				
+			}
+			
+			.left-mode > .lex-white-label,
+			.right-mode > .lex-white-label,
+			.center-mode > .lex-white-label{
+				width: 80%;
+				font-weight: normal;	
+				font-size: 0.6em;				
+			}
+			
+			.center-mode{
+				display: inline-block;
+				width: 94%;
+				height: 90%;
+				padding: 2%;
+				text-align: center;
+				transition: background 0.3s;
+				background-color: rgba(255,255,255,0.07);
+			}
+			
+			.right-mode{
+				display: inline-block;
+				width: 94%;
+				height: 90%;
+				padding: 2%;
+				margin-left: 2%;
+				text-align: center;
+				transition: background 0.3s;
+				background-color: rgba(255,255,255,0.07);
+			}
+			
+			.mode-ico{
+				height: 50px;
+				margin-top: 30px;
+				margin-bottom: 10px;
+			}
+			
+			.title-float{
+				
+				position: absolute;
+				top: 0px;
+				width: auto;
+				right: 2%;
+				
+			}
+			
+			.select-space{
+				
+				margin-left: 2%;
+				padding: 10px;
+				width: 94%;
+				margin-top: 10px;
+				
+			}
+			
+			.mdl-layout__drawer-button{
+				visibility: hidden;
+			}
+			
+			.lex-menu-button{
+				position: absolute;
+				top: 10px;
+				left: 2%;
+				width: 35px;
+			}
+			
+			.lex-logo-menu-inside{
+				width: 35px;
+				margin-left: 14px;
+			}
+			
+			#select_countdown{
+				display: none;	
+				font-size: 0.7em;
+			}
+			
+			#select_thematic{
+				display: none;	
+				font-size: 0.7em;
+			}
+			
+			.lex-menu-title{
+				margin-left: 10px;
+				color: #fff;
+			}
+			
+			.lex-sep{
+				margin-left: 16px;
+				margin-right: 16px;
+				margin-top:6px;
+				margin-bottom: 0px;
+				border-top: 1px solid #444;
+			}
+		</style>
+	</head>
+	<body onselectstart='return false;'>
+		
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header"  id='mailer'>
+		<header class="mdl-layout__header">
+			<label class='lex-cyan-box-label title-float'>Select a Game mode</label>
+			<img id='lex_menu_button' class='lex-menu-button' src='images/lex-logo-colored.png'>
+			<div class="mdl-layout__header-row">
+				<!-- Title -->
+				<span class="mdl-layout-title"></span>
+				<!-- Add spacer, to align navigation to the right -->
+				<div class="mdl-layout-spacer"></div>
+				<!-- Navigation. We hide it in small screens. -->
+				<nav class="mdl-navigation mdl-layout--large-screen-only">
+					<!--<a class="mdl-navigation__link" href="">Link</a>
+					<a class="mdl-navigation__link" href="">Link</a>
+					<a class="mdl-navigation__link" href="">Link</a>
+					<a class="mdl-navigation__link" href="">Link</a>-->
+				</nav>
+			</div>
+		</header>
+		<div class="mdl-layout__drawer">
+			
+			<nav class="mdl-navigation">
+				<table cellspadding='0' cellspacing='0'>
+					<tr>
+						<td><img src='images/lex-logo-colored.png' class='lex-logo-menu-inside'></td>
+						<td><span class='lex-menu-title'>LEX</span></td>
+					</tr>
+				</table>
+				
+				<hr class='lex-sep'></hr>
+				
+				<a class="mdl-navigation__link" href="">Play Now</a>
+				<a class="mdl-navigation__link" href="">My Profile</a>
+				<a class="mdl-navigation__link" href="">Missed Words</a>
+				<a class="mdl-navigation__link" href="">Rankings</a>
+				<a class="mdl-navigation__link" href="">Settings</a>
+				<a class="mdl-navigation__link" href="">About</a> 
+			</nav>
+		</div>
+		<main class="mdl-layout__content lex-main">
+			
+			
+			
+					<div class='lex-main'>
+						
+						<div class='lex-top-modes' onclick='resizer()'>
+							<table class='table-modes' cellspacing='0' cellspadding='0'>
+								<tr>
+									<td width='32%'>
+											<div class='left-mode' id='countdownBox' onclick='changeMode(1)'>
+													<img class='mode-ico' src='images/lex-mode-countdown.png'>
+													<label class='lex-cyan-label' id='title_countdown'>Countdown Mode</label>
+													<label class='lex-white-label'>Choose how many words you want to answer in Lex Countdown</label>
+													<select type="text" class="lex-select select-space" id='select_countdown'>
+														<option>10 Words</option>
+														<option>20 Words</option>
+													</select>
+											</div>
+									</td>
+									<td width='34' align='center'>
+											<div class='center-mode' id='traditionalBox' onclick='changeMode(2)'>
+													<img class='mode-ico' src='images/lex-mode-traditional.png'>
+													<label class='lex-cyan-label' id='title_traditional'>Traditional Mode</label>
+													<label class='lex-white-label'>The traditional way to play the Lex</label>
+											</div>
+									</td>
+									<td width='32%'>
+											<div class='right-mode' id='thematicBox' onclick='changeMode(3)'>
+													<img class='mode-ico' src='images/lex-mode-thematic.png'>
+													<label class='lex-cyan-label' id='title_thematic'>Thematic Mode</label>
+													<label class='lex-white-label'>You can choose a specific word theme to play in this Lex Mode</label>
+													<select type="text" class="lex-select select-space" id='select_thematic'>
+														<option>Animals</option>
+														<option>Colors</option>
+														<option>Human Body</option>
+													</select>
+											</div>
+									</td>
+								</tr>
+							</table>
+							
+						</div>
+						
+						
+						<div class='lex-bottom-modes'>
+								<button class='lex-pink-button'>Play now</button>
+						</div>
+						
+					</div>
+				
+		</main>
+	</div>
+	</body>
+	<script>
+		
+		window.onload = function(){
+			
+			changeMode(2);
+			
+		}
+	
+			window.resize = function(){
+				
+					mailer.style.height = window.innerHeight+"px";
+				
+			}
+			
+			function resizer(){
+				
+				mailer.style.height = window.innerHeight+"px";
+			}
+		
+			lex_menu_button.onclick = function(){
+				
+							
+				document.getElementsByClassName("mdl-layout__drawer-button")[0].click();
+				
+			}
+			
+			function changeMode(mode){
+				
+					thematicBox.style.backgroundColor = 'rgba(255,255,255,0.07)';
+					countdownBox.style.backgroundColor = 'rgba(255,255,255,0.07)';
+				  traditionalBox.style.backgroundColor = 'rgba(255,255,255,0.07)';
+					select_countdown.style.display = 'none';
+					select_thematic.style.display = 'none';
+					title_thematic.style.color = '#00f0b0';
+					title_countdown.style.color = '#00f0b0';
+					title_traditional.style.color = '#00f0b0';
+				
+					if(mode == 1){
+						
+							countdownBox.style.backgroundColor = 'rgba(255,255,255,0.13)';
+							select_countdown.style.display = 'inline-block';
+							title_countdown.style.color = '#f00060'; 	
+						
+					}
+					else if(mode == 2){
+						
+						traditionalBox.style.backgroundColor = 'rgba(255,255,255,0.13)';
+						title_traditional.style.color = '#f00060';
+					}
+					else if(mode == 3){
+						
+						thematicBox.style.backgroundColor = 'rgba(255,255,255,0.13)';
+						select_thematic.style.display = 'inline-block';
+						title_thematic.style.color = '#f00060';
+						
+					}
+				
+			}
+	
+	</script>
+</html>

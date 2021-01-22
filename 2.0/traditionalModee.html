@@ -1,0 +1,580 @@
+<html>
+	<head>
+		<title></title>
+		
+		
+		<link href='https://fonts.googleapis.com/css?family=Impact' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/lex-style.css">
+		<link rel="stylesheet" href="css/mdl/material.min.css">
+		<script src="css/mdl/material.min.js"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<style>
+			
+			.lex-central-box{
+				display: inline-block;
+				background-color: transparent;
+				width: 50%;
+				height: 80%;
+				margin-top: 10%;
+				margin-left: 25%;
+				text-align: center;
+			}
+
+			.lex-logo{
+				display: inline-block;
+				height: 35%;
+				margin-bottom: 5%;
+
+			}
+			
+			.begin{}
+			
+			.lex-main{
+			
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+				
+			}
+			
+			.lex-top-modes{
+				
+				display: inline-block;
+				width: 100%;
+				height: 75%;			
+				
+			}
+			
+			.lex-bottom-modes{
+				
+				display: inline-block;
+				width: 96%;
+				height: 25%;
+				margin-left: 2%;		
+				margin-right: 2%;		
+				
+			}
+			
+			
+			.table-modes{
+				width:96%;
+				height: 100%;
+				margin-left: 2%;
+			}
+			
+			.left-mode{
+				display: inline-block;
+				width: 94%;
+				height: 90%;
+				padding: 2%;
+				margin-right: 2%;
+				text-align: center;
+				transition: background 0.3s;
+				background-color: rgba(255,255,255,0.07);
+			}
+			
+			.left-mode > .lex-cyan-label,
+			.right-mode > .lex-cyan-label,
+			.center-mode > .lex-cyan-label{
+				font-size: 1em;				
+			}
+			
+			.left-mode > .lex-white-label,
+			.right-mode > .lex-white-label,
+			.center-mode > .lex-white-label{
+				width: 80%;
+				font-weight: normal;	
+				font-size: 0.6em;				
+			}
+			
+			.center-mode{
+				display: inline-block;
+				width: 94%;
+				height: 90%;
+				padding: 2%;
+				text-align: center;
+				transition: background 0.3s;
+				background-color: rgba(255,255,255,0.07);
+			}
+			
+			.right-mode{
+				display: inline-block;
+				width: 94%;
+				height: 90%;
+				padding: 2%;
+				margin-left: 2%;
+				text-align: center;
+				transition: background 0.3s;
+				background-color: rgba(255,255,255,0.07);
+			}
+			
+			.mode-ico{
+				height: 50px;
+				margin-top: 30px;
+				margin-bottom: 10px;
+			}
+			
+			.title-float{
+				
+				position: absolute;
+				top: 0px;
+				width: auto;
+				right: 2%;
+				
+			}
+			
+			.select-space{
+				
+				margin-left: 2%;
+				padding: 10px;
+				width: 94%;
+				margin-top: 10px;
+				
+			}
+			
+			.mdl-layout__drawer-button{
+				visibility: hidden;
+			}
+			
+			.lex-menu-button{
+				position: absolute;
+				top: 10px;
+				left: 2%;
+				width: 35px;
+			}
+			
+			.lex-logo-menu-inside{
+				width: 35px;
+				margin-left: 14px;
+			}
+			
+			#select_countdown{
+				display: none;	
+				font-size: 0.7em;
+			}
+			
+			#select_thematic{
+				display: none;	
+				font-size: 0.7em;
+			}
+			
+			.lex-menu-title{
+				margin-left: 10px;
+				color: #fff;
+			}
+			
+			.lex-sep{
+				margin-left: 16px;
+				margin-right: 16px;
+				margin-top:6px;
+				margin-bottom: 0px;
+				border-top: 1px solid #444;
+			}
+			
+			.lex-main-box{
+				
+				display: inline-block;
+				height: 90%;
+				width: 100%;
+				
+			}
+			
+			.lex-points{
+				
+				font-size: 2em;
+				
+			}
+			
+			.legend{
+				padding: 30px;
+				font-size: 0.8em;	
+				padding-top: 2px;
+				padding-bottom: 6px;
+			}
+			
+			.lex-lifes{
+				position: absolute;
+				top: 0px;
+				width: auto;
+				right: 2%;	
+			}
+			
+			.lex-points-box{
+				padding:5px;
+				padding-left:20px;
+				padding-right:20px;
+				text-align: center;
+				background-color: #00f0b0;
+				
+			}
+			
+			.lex-points-title{
+				font-size: 0.7em;
+			}
+			
+			.lex-points-score{
+				font-size: 1.6em;
+			}
+			
+			.lex-heart{
+				width: 20px;
+				height: 20px;
+				margin-left: 5px;
+			}
+			
+			.lex-heart-box{
+				padding-right: 10px;
+			}
+			
+			.lex-init{
+				
+				width: 60%;
+				height: 60%;
+				padding-left: 20%;
+				padding-right: 20%;
+				padding-top: 20%;
+				
+				
+			}
+			
+			.table-game{
+				display: none;
+			}
+			
+			.lex-load-bar{
+				display: none;
+			}
+			
+			.lex-animation-label{
+				display: none;
+				width: 100%;
+				color: #fff;
+				font-size: 4em;
+				text-align: center;
+				opacity: 0;
+				transition: opacity 0.2s;
+			}
+			
+			#start_button{
+				
+				opacity: 1;
+				transition: opacity 0.3s;
+				
+			}
+		</style>
+	</head>
+	<body onselectstart='return false;'>
+		
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header"  id='mailer'>
+		<header class="mdl-layout__header">
+			
+			<div class='lex-lifes'>
+				
+				<table cellspacing='0' cellspadding='0'>
+						<tr>
+							<td>
+									<div class='lex-heart-box'>
+										<img src='images/lex-heart.png' class='lex-heart'>		
+										<img src='images/lex-heart.png' class='lex-heart'>
+										<img src='images/lex-heart.png' class='lex-heart'>
+										<img src='images/lex-heart.png' class='lex-heart'>
+										<img src='images/lex-heart.png' class='lex-heart'>
+									</div>
+							</td>
+							<td>
+									<div class='lex-points-box'   onclick='resizer()' >
+										<span class='lex-points-title'>Record</span><br>
+										<span class='lex-points-score' id='lex_points'>0</span>
+									</div>
+							</td>
+						</tr>					
+				</table>
+				
+			</div>
+			
+			<img id='lex_menu_button' class='lex-menu-button' src='images/lex-logo-colored.png'>
+			<div class="mdl-layout__header-row">
+				<!-- Title -->
+				<span class="mdl-layout-title"></span>
+				<!-- Add spacer, to align navigation to the right -->
+				<div class="mdl-layout-spacer"></div>
+				<!-- Navigation. We hide it in small screens. -->
+				<nav class="mdl-navigation mdl-layout--large-screen-only">
+					<!--<a class="mdl-navigation__link" href="">Link</a>
+					<a class="mdl-navigation__link" href="">Link</a>
+					<a class="mdl-navigation__link" href="">Link</a>
+					<a class="mdl-navigation__link" href="">Link</a>-->
+				</nav>
+			</div>
+		</header>
+		<div class="mdl-layout__drawer">
+			
+			<nav class="mdl-navigation">
+				<table cellspadding='0' cellspacing='0'>
+					<tr>
+						<td><img src='images/lex-logo-colored.png' class='lex-logo-menu-inside'></td>
+						<td><span class='lex-menu-title'>LEX</span></td>
+					</tr>
+				</table>
+				
+				<hr class='lex-sep'></hr>
+				
+				<a class="mdl-navigation__link" href="">Play Now</a>
+				<a class="mdl-navigation__link" href="">My Profile</a>
+				<a class="mdl-navigation__link" href="">Missed Words</a>
+				<a class="mdl-navigation__link" href="">Rankings</a>
+				<a class="mdl-navigation__link" href="">Settings</a>
+				<a class="mdl-navigation__link" href="">About</a> 
+			</nav>
+		</div>
+		<main class="mdl-layout__content lex-main">
+			
+			
+			
+					<div class='lex-main-box'>
+						<table width='100%' height='100%' class='table-game' id='table_game'>
+							<tr>
+								<td width='33%'>
+									<button class='lex-button-game' id='lex_option_one' onclick='answering(1)'>Option one</button>
+								</td>
+								<td width='34%'>
+									<label class='lex-label-game' id='lex_question' onclick='resizer()'>Question</label>
+								</td>
+								<td width='33%'>
+									<button class='lex-button-game' id='lex_option_two' onclick='answering(2)'>Option two</button>
+								</td>
+							</tr>
+						</table>			
+						
+						<div class='lex-init' id='lex_init'>
+								<button class='lex-pink-button' id='start_button' onclick='animationInitial()'>Play</button>
+								<label class='lex-animation-label' id='lex_animation_label'>3</label>
+						</div>
+						
+					</div>
+			
+					<div class='lex-load-bar' id='loader'>
+							<div class='lex-loader'>
+
+							</div>
+					</div>
+		</main>
+	</div>
+	</body>
+	<script src='https://anytech.com.br/gustavo/lex/js/jquery.js'></script>
+	<script>
+		
+		window.onload = function(){
+			
+			changeMode(2);
+			
+		}
+	
+			window.resize = function(){
+				
+					mailer.style.height = window.innerHeight+"px";
+				
+			}
+			
+			function resizer(){
+				
+				mailer.style.height = window.innerHeight+"px";
+			}
+		
+			lex_menu_button.onclick = function(){
+				
+							
+				document.getElementsByClassName("mdl-layout__drawer-button")[0].click();
+				
+			}
+			
+			function changeMode(mode){
+				
+					thematicBox.style.backgroundColor = 'rgba(255,255,255,0.07)';
+					countdownBox.style.backgroundColor = 'rgba(255,255,255,0.07)';
+				  traditionalBox.style.backgroundColor = 'rgba(255,255,255,0.07)';
+					select_countdown.style.display = 'none';
+					select_thematic.style.display = 'none';
+					title_thematic.style.color = '#00f0b0';
+					title_countdown.style.color = '#00f0b0';
+					title_traditional.style.color = '#00f0b0';
+				
+					if(mode == 1){
+						
+							countdownBox.style.backgroundColor = 'rgba(255,255,255,0.13)';
+							select_countdown.style.display = 'inline-block';
+							title_countdown.style.color = '#f00060'; 	
+						
+					}
+					else if(mode == 2){
+						
+						traditionalBox.style.backgroundColor = 'rgba(255,255,255,0.13)';
+						title_traditional.style.color = '#f00060';
+					}
+					else if(mode == 3){
+						
+						thematicBox.style.backgroundColor = 'rgba(255,255,255,0.13)';
+						select_thematic.style.display = 'inline-block';
+						title_thematic.style.color = '#f00060';
+						
+					}
+				
+			}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			
+		
+		
+		
+		
+		
+			function parametrosIniciais(){
+				
+				vidas = 3;
+				points = 0;
+				tempoEmSegundos = 3;
+				idioma = 1;
+				traducoes = 2;
+				record = 0;
+				ultimaPalavra = 0;
+				x = 0;
+				
+			}
+		
+		
+			function animationInitial(){
+				
+				start_button.style.opacity = '0';
+				setTimeout("start_button.style.display = 'none';",300);
+				
+				
+				//3
+				lex_animation_label.innerHTML = '3';
+				lex_animation_label.style.display = 'inline-block';				
+				setTimeout("lex_animation_label.style.opacity = '1';",400);				
+				setTimeout("lex_animation_label.style.opacity = '0';",900);
+				
+				//2
+				setTimeout("lex_animation_label.innerHTML = '2';",1100);
+				setTimeout("lex_animation_label.style.opacity = '1';",1200);				
+				setTimeout("lex_animation_label.style.opacity = '0';",1700);
+				
+				//1
+				setTimeout("lex_animation_label.innerHTML = '1';",1900);
+				setTimeout("lex_animation_label.style.opacity = '1';",2000);				
+				setTimeout("lex_animation_label.style.opacity = '0';",2500);
+				
+				//LEX
+				setTimeout("lex_animation_label.innerHTML = 'LEX';",2700);
+				setTimeout("lex_animation_label.style.opacity = '1';",2800);				
+				setTimeout("lex_animation_label.style.opacity = '0';",3300);
+				
+				//Retorna componentes do jogo
+				setTimeout("lex_init.style.display = 'none';",3500);
+				setTimeout("loader.style.display = 'inline-block';",3500);				
+				setTimeout("table_game.style.display = 'table';",3500);
+				parametrosIniciais();
+				getWords();
+			}
+		
+		
+			function getWords(){
+					
+				$.post("https://anytech.com.br/gustavo/lex/php/buscaPalavra.php",
+			        {
+			          categoria: '15',
+					 			pergunta: '1',
+					 			resposta: '2',
+					 			idioma_ini: 'br',
+					 			idioma_alt: 'en',
+					 			last: ultimaPalavra
+			        },
+			        function(data){
+					 					
+								separador = data.split("|");
+					
+								question = separador[0];
+								resposta = separador[1];
+								errada = separador[2];
+								last = separador[3];
+								
+								//DEFININDO RESPOSTA CORRETA
+								x = Math.floor((Math.random() * 2) + 1);
+								lex_question.innerHTML = question;
+								
+								if(x == 1){
+									
+									lex_option_one.innerHTML = resposta;
+									lex_option_two.innerHTML = errada;
+									
+								}
+								else{
+									
+									lex_option_one.innerHTML = errada;
+									lex_option_two.innerHTML = resposta;
+									
+								}
+					
+              }
+                
+         );
+				
+			}
+		
+		
+			function answering(val){
+				
+				if(val == x){
+					
+					//RESPOSTA CERTA
+					rightAnswer();
+					
+				}
+				else{
+					
+					//RESPOSTA ERRADA
+					wrongAnswer();
+					
+				}
+				
+			}
+		
+		
+			function rightAnswer(){
+				
+				points++;
+				
+				if(points > record){
+				
+					record = points;
+					lex_points.innerHTML = record;
+					
+				}
+				
+				getWords();
+				
+			}
+		
+		
+		
+		
+			function wrongAnswer(){
+				
+				
+				
+			}
+		
+	
+	</script>
+</html>

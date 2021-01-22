@@ -1,0 +1,317 @@
+			
+			*{
+				padding: 0px;
+				margin: 0px;
+				outline: none;
+				border: 0px;
+				outline: none;
+				font-family: impact;
+			}
+
+			body{
+				background-color: #000000;
+			}
+
+
+			.mdl-layout__drawer{
+							
+				background-color: #333!important;
+				border-right-color: transparent!important;
+		
+			}
+
+
+			.mdl-layout__header{
+				background-color: #000000!important;	
+			}
+
+			.mdl-navigation__link{
+				
+				
+				padding: 10px!important;	
+				padding-left: 16px!important;	
+				
+			}
+
+
+
+			.lex-pink-button{
+
+				display: inline-block;
+				width: 100%;
+				padding: 10px;
+				vertical-align: middle;
+				background-color: #f00060;
+				color: #ffffff;
+				text-transform: uppercase;
+				font-family: impact;
+				font-weight: 100;
+				font-size: 2em;
+				margin-bottom: 10px;
+
+			}
+
+
+			.lex-black-button{
+
+				display: inline-block;
+				width: 100%;
+				padding: 10px;
+				vertical-align: middle;
+				background-color: #333333;
+				color: #00f0b0;
+				text-transform: uppercase;
+				font-family: impact;
+				font-weight: 100;
+				font-size: 2em;
+				margin-bottom: 10px;
+
+			}
+
+
+			.lex-white-button{
+
+				display: inline-block;
+				width: 100%;
+				padding: 10px;
+				vertical-align: middle;
+				background-color: #ffffff;
+				color: #f00060;
+				text-transform: uppercase;
+				font-family: impact;
+				font-weight: 100;
+				font-size: 2em;
+				margin-bottom: 10px;
+
+			}
+
+			.lex-cyan-button{
+
+				display: inline-block;
+				width: 100%;
+				padding: 10px;
+				vertical-align: middle;
+				background-color: #00f0b0;
+				color: #333333;
+				text-transform: uppercase;
+				font-family: impact;
+				font-weight: 100;
+				font-size: 2em;
+				margin-bottom: 10px;
+
+			}
+
+			.lex-cyan-button:active{
+
+				background-color: #00f9b6;
+
+			}
+
+			.lex-white-button:active{
+
+				background-color: #eeeeee;
+
+			}
+
+			.lex-black-button:active{
+
+				background-color: #000000;
+
+			}
+
+			.lex-pink-button:active{
+
+				background-color: #fd0065;
+
+			}
+
+
+
+			.lex-pink-label{
+
+				display: inline-block;
+				width: 100%;
+				color: #f00060;
+				background-color: transparent;
+				font-family: impact;
+				font-size: 0.8em;
+
+			}
+
+			.lex-cyan-label{
+
+				display: inline-block;
+				width: 100%;
+				color: #00f0b0;
+				font-family: impact;
+				font-size: 0.8em;
+				
+			}
+
+			.lex-white-label{
+
+				display: inline-block;
+				width: 100%;
+				color: #ffffff;
+				font-family: impact;
+				font-size: 0.8em;
+				
+			}
+
+			.lex-input{
+				display: inline-block;
+				width: 100%;
+				padding: 20px;
+				vertical-align: middle;
+				background-color: #222222;
+				color: #00f0b0;
+				text-transform: uppercase;
+				font-family: impact;
+				font-weight: 100;
+				font-size: 1em;
+			}
+
+			::-webkit-input-placeholder{
+
+				color: #555;
+				letter-spacing: 0em;
+			}
+
+			.lex-input-password{
+
+				display: inline-block;
+				width: 100%;
+				padding: 20px;
+				vertical-align: middle;
+				background-color: #222222;
+				color: #00f0b0;
+				text-transform: uppercase;
+				font-family: impact;
+				font-weight: 100;
+				font-size: 1em;
+				letter-spacing: 0.5em;
+
+			}
+
+			.lex-select{
+				display: inline-block;
+				width: 100%;
+				padding: 20px;
+				vertical-align: middle;
+				background-color: #222222;
+				color: #f00060;
+				text-transform: uppercase;
+				font-family: impact;
+				font-weight: 100;
+				font-size: 1em;
+			}
+
+
+			.lex-pink-box-label{
+				display: inline-block;
+				width: 96%;
+				padding: 2%;
+				vertical-align: middle;
+				background-color: #f00060;
+				color: #ffffff;
+				text-transform: uppercase;
+				font-family: impact;
+				font-weight: 100;
+				font-size: 1em;
+			}
+
+			.lex-black-box-label{
+				display: inline-block;
+				width: 96%;
+				padding: 2%;
+				vertical-align: middle;
+				background-color: #333;
+				color: #00f0b0;
+				text-transform: uppercase;
+				font-family: impact;
+				font-weight: 100;
+				font-size: 1em;
+			}
+
+
+			.lex-white-box-label{
+				display: inline-block;
+				width: 96%;
+				padding: 2%;
+				vertical-align: middle;
+				background-color: #ffffff;
+				color: #f00060;
+				text-transform: uppercase;
+				font-family: impact;
+				font-weight: 100;
+				font-size: 1em;
+			}
+
+			.lex-cyan-box-label{
+				display: inline-block;
+				width: 96%;
+				padding: 2%;
+				vertical-align: middle;
+				background-color: #00f0b0;
+				color: #333;
+				text-transform: uppercase;
+				font-family: impact;
+				font-weight: 100;
+				font-size: 1em;
+			}
+
+
+
+
+			.lex-button-game{
+
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+				padding: 10px;
+				vertical-align: middle;
+				background-color: transparent;
+				color: #00f0b0;
+				text-transform: uppercase;
+				font-family: impact;
+				font-weight: 100;
+				font-size: 1.3em;
+
+			}
+
+
+
+			.lex-label-game{
+
+				display: inline-block;
+				width: 100%;
+				text-align: center;
+				color: #ffffff;
+				font-family: impact;
+				text-transform: uppercase;
+				font-size: 2em;
+				
+			}
+
+
+
+			.lex-load-bar{
+				display: inline-block;
+				width: 100%;
+				background-color: #222222;
+				height: 15px;
+			}
+
+			.lex-loader{
+				display: inline-block;
+				background-color: #f00060;
+				height: 15px;
+			}
+
+			#ico_certo{
+				color: #00f0b0;
+			}
+
+			#ico_errado{
+				color: #f00060;
+			}
